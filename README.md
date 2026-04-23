@@ -146,7 +146,7 @@
         }
 
         .btn-primary {
-            background: #1e2f5e;
+            background: #32CD32;
             color: white;
             border: none;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
