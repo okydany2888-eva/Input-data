@@ -408,7 +408,7 @@
                 </div>
                 <div class="form-group">
                     <label>🔖 Satuan / Unit</label>
-                    <input type="text" id="unit" placeholder="pcs, box, kg, liter" required>
+                    <input type="text" id="unit" placeholder="pcs, box, kg, sheet, roll" required>
                 </div>
             </div>
 
@@ -424,7 +424,7 @@
             </div>
 
             <div class="button-group">
-                <button type="submit" class="btn btn-primary">Tambah Barang Masuk</button>
+                <button type="submit" class="btn btn-primary">Tambah</button>
                 <button type="button" id="resetFormBtn" class="btn btn-secondary">Reset Form</button>
             </div>
         </form>
