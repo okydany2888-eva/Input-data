@@ -357,11 +357,11 @@
             <form id="barangMasukForm">
                 <div class="form-grid">
                     <div class="field-group">
-                        <label><i>🔖</i> Nama Barang *</label>
-                        <input type="text" id="namaBarang" placeholder="Contoh: Kipas Angin, Beras 5kg" required>
+                        <label><i>📑</i> Nama Barang *</label>
+                        <input type="text" id="namaBarang" placeholder="Contoh: smoke box, lume, dll" required>
                     </div>
                     <div class="field-group">
-                        <label><i>🏷️</i> Kategori</label>
+                        <label><i>📄</i> Kategori</label>
                         <select id="kategori">
                             <option value="Booklet 1 ¼">Booklet 1 ¼</option>
                             <option value="Booklet 1 ¼ + tips">Booklet 1 ¼ + tips</option>
@@ -371,12 +371,12 @@
                         </select>
                     </div>
                     <div class="field-group">
-                        <label><i>🔢</i> Jumlah Masuk *</label>
+                        <label><i>📥</i> Jumlah Masuk *</label>
                         <input type="number" id="jumlah" min="1" step="1" placeholder="Satuan unit" required>
                     </div>
                     <div class="field-group">
-                        <label><i>💰</i> Harga Satuan (Rp)</label>
-                        <input type="number" id="harga" min="0" step="1000" placeholder="0">
+                        <label><i>🏷️</i> Satuan Unit </label>
+                        <input type="letter" id="huruf" min="pcs, sheet, kg, roll">
                     </div>
                     <div class="field-group full-width">
                         <label><i>📅</i> Tanggal Masuk</label>
@@ -408,7 +408,7 @@
                         <th>Nama Barang</th>
                         <th>Kategori</th>
                         <th>Jumlah</th>
-                        <th>Harga Satuan</th>
+                        <th>Satuan Unit</th>
                         <th>Tanggal Masuk</th>
                         <th>Catatan</th>
                         <th style="width:50px">Aksi</th>
