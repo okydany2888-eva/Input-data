@@ -1,5 +1,4 @@
 # Input-data
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -364,11 +363,11 @@
                     <div class="field-group">
                         <label><i>🏷️</i> Kategori</label>
                         <select id="kategori">
-                            <option value="Elektronik">Elektronik</option>
-                            <option value="Sembako">Sembako</option>
-                            <option value="Furniture">Furniture</option>
-                            <option value="Alat Tulis">Alat Tulis</option>
-                            <option value="Lainnya">Lainnya</option>
+                            <option value="Booklet 1 ¼">Booklet 1 ¼</option>
+                            <option value="Booklet 1 ¼ + tips">Booklet 1 ¼ + tips</option>
+                            <option value="Display box">Display box</option>
+                            <option value="Booket kss">Booklet kss</option>
+                            <option value="Booklet kss + tips">Booklet kss + tips</option>
                         </select>
                     </div>
                     <div class="field-group">
