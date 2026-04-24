@@ -290,67 +290,91 @@
             border-top: 1px solid #ecf3fa;
         }
 
-        /* ========= ANDROID PORTRAIT (max-width: 600px) ========= */
-        @media (max-width: 768px) {
-            body { padding: 8px; }
-            .app-container { border-radius: 28px; }
-            .app-header { padding: 14px 16px; }
-            .app-header h1 { font-size: 1.25rem; gap: 6px; }
-            .app-header h1:before { font-size: 1.4rem; }
-            .app-header p { font-size: 0.65rem; display: none; }
-            .form-wrapper { padding: 14px 14px 10px; }
-            .grid-2cols { flex-direction: column; gap: 12px; margin-bottom: 12px; }
-            .input-field { min-width: 100%; }
-            .btn-row { flex-direction: column; gap: 10px; }
-            .record-panel { padding: 14px 12px 18px; }
-            .toolbar-flex { flex-direction: column; align-items: stretch; gap: 10px; }
-            .action-btns { justify-content: flex-end; }
-            .search-zone { flex-direction: column; align-items: stretch; border-radius: 24px; padding: 12px; gap: 10px; }
-            .btn-reset-filter { align-self: flex-start; }
-            th, td { padding: 9px 6px; font-size: 0.7rem; }
-            .badge-total { font-size: 0.6rem; padding: 3px 10px; }
-        }
-
-        /* ========= ANDROID LANDSCAPE (max-height: 900px) & orientation landscape ========= */
-        @media (max-height: 900px) and (orientation: landscape) {
-            body { padding: 6px; }
-            .app-header { padding: 8px 18px; }
-            .app-header h1 { font-size: 1rem; gap: 6px; }
-            .app-header p { display: none; }
-            .form-wrapper { padding: 8px 16px 6px; }
-            .grid-2cols { gap: 8px; margin-bottom: 6px; }
-            .input-field input, .input-field select { padding: 6px 10px; font-size: 0.7rem; }
-            .input-field label { font-size: 0.6rem; }
-            .btn { padding: 5px 12px; font-size: 0.7rem; }
-            .record-panel { padding: 8px 12px 12px; }
-            .toolbar-flex { margin-bottom: 8px; }
-            .title-count h3 { font-size: 0.9rem; }
-            .badge-total { font-size: 0.55rem; padding: 2px 8px; }
-            .icon-action { padding: 4px 12px; font-size: 0.65rem; }
-            .search-zone { padding: 8px 12px; margin-bottom: 10px; gap: 8px; }
-            .search-group input, .search-group select { padding: 5px 10px; font-size: 0.7rem; }
-            .btn-reset-filter { padding: 5px 16px; font-size: 0.65rem; }
-            .table-scroll { max-height: 210px; overflow-y: auto; }
-            th, td { padding: 5px 6px; font-size: 0.65rem; }
-            .delete-btn { font-size: 1rem; }
-            footer { padding: 6px 12px; font-size: 0.55rem; }
-        }
-
-        /* layar lebar landscape + tinggi sedang */
-        @media (min-width: 700px) and (max-height: 900px) {
-            .table-scroll { max-height: 250px; overflow-y: auto; }
-            .form-wrapper { padding: 10px 20px 6px; }
-        }
-
-        @media print {
-            body { background: white; padding: 0; margin: 0; }
-            .app-container { box-shadow: none; border-radius: 0; }
-            .form-wrapper, .btn-row, .search-zone, .action-btns, .delete-btn, footer, .app-header p, .btn-reset-filter {
-                display: none !important;
+        @media (min-width: 768px) {
+            body {
+                padding: 20px;
             }
-            .record-panel { padding: 0; }
-            table { min-width: auto; border: 1px solid #aaa; }
-            th, td { border: 1px solid #ccc; }
+            .app-container {
+                padding: 24px 28px;
+            }
+            .form-grid {
+                gap: 16px;
+            }
+            .input-group {
+                flex: 1 1 auto;
+            }
+            button {
+                width: auto;
+                padding: 10px 24px;
+            }
+            .btn-group button {
+                width: auto;
+            }
+            .search-box {
+                flex: 2;
+            }
+            table {
+                font-size: 0.8rem;
+                min-width: auto;
+            }
+            td, th {
+                padding: 10px 8px;
+            }
+        }
+
+        @media (max-width: 900px) and (orientation: landscape) {
+            body {
+                padding: 8px;
+            }
+            .app-container {
+                padding: 12px 16px;
+            }
+            .form-card {
+                padding: 12px;
+                margin: 8px 0;
+            }
+            .input-group input, .input-group select {
+                padding: 8px 10px;
+            }
+            button {
+                padding: 8px 16px;
+            }
+            th, td {
+                padding: 6px 4px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .input-group {
+                flex: 1 1 100%;
+            }
+            .search-box {
+                flex-direction: column;
+                align-items: stretch;
+                border-radius: 28px;
+                background: #f1f5f9;
+                padding: 12px;
+            }
+            .search-box input {
+                background: white;
+                border-radius: 30px;
+                padding: 10px 12px;
+                margin: 2px 0;
+            }
+            .btn-group {
+                width: 100%;
+                justify-content: space-between;
+            }
+            .btn-group button {
+                flex: 1;
+            }
+        }
+
+        .info-note {
+            font-size: 0.65rem;
+            color: #5c7a94;
+            margin-top: 8px;
+            text-align: center;
         }
     </style>
 </head>
