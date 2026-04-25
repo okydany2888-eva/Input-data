@@ -60,7 +60,7 @@
         .orientation-badge {
             position: fixed;
             bottom: 16px;
-            right: 16px;
+            right: 9px;
             background: rgba(0,0,0,0.6);
             backdrop-filter: blur(4px);
             color: white;
@@ -347,19 +347,6 @@
         <div class="sub">Input Dropdown Barang Masuk & Barang Keluar/Consumable</div>
     </div>
 
-    <!-- Filter Bar untuk Supplier & Satuan (global) -->
-    <div class="filter-bar">
-        <div class="filter-group">
-            <label>Dropdown Supplier</label>
-            <select id="dropdownSupplier"></select>
-        </div>
-        <div class="filter-group">
-            <label>Dropdown Satuan</label>
-            <select id="dropdownSatuan"></select>
-        </div>
-        <div class="filter-group">
-            <label>&nbsp;</label>
-            <button id="resetPermanenBtn" class="btn-reset btn-reset-danger"><i class="fas fa-database"></i> Reset Semua Data</button>
         </div>
     </div>
 
